@@ -12,22 +12,14 @@ app.use(ejsLayouts);
 
 
 // Public dosyasını herkese açma
-// dokunmayın
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 
 
 // Router ekleme yeri
-// dokunmayın
 require("./app_server/routers/routeManager")(app);
 
 
 
-
-
-
-
-
 // Port dinleme yeri
-// dokunmayın
 app.listen(8001);
